@@ -52,8 +52,8 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`ID`, `Name`, `Mobile`, `Age`, `Gender`, `Aadhar`, `DateofBirth`, `Email`, `AccountType`, `AccountNo`, `CIF`, `BranchCode`, `OpeningDate`, `Username`, `Password`, `Pin`, `Deposit`) VALUES
-(1, 'Rudranath Sanyal', '8240724053', 23, 'Male', '9870003156', '1999-06-24', 'rudra@gmail.com', 'Saving', '811567699', '59009270', '1769', '19/06/2022 22:54:22', 'rudro', '2438', 9624, 90577.00),
-(2, 'Malay Sanyal', '9744023590', 12, 'Male', '78941002369', '2010-07-27', 'malay@gmail.com', 'Saving', '765256306', '66594545', '1769', '21/06/2022 15:57:13', 'max', '1505', 2669, 71500.00);
+(1, 'Rajan Sen', '9740369850', 23, 'Male', '9870003156', '1999-06-24', 'raj@gmail.com', 'Saving', '811567699', '59009270', '1769', '19/06/2022 22:54:22', 'raj', '2438', 9624, 90577.00),
+(2, 'Max Sen', '9744023590', 12, 'Male', '78941002369', '2010-07-27', 'max@gmail.com', 'Saving', '765256306', '66594545', '1769', '21/06/2022 15:57:13', 'max', '1505', 2669, 71500.00);
 
 -- --------------------------------------------------------
 
@@ -116,8 +116,8 @@ CREATE TABLE `credit` (
 --
 
 INSERT INTO `credit` (`AccountNo`, `CardNO`, `HolderName`, `CVV`, `CardType`, `IssueDate`, `ExpiryDate`, `Balance`, `InterestRate`) VALUES
-('811567699', '7921822085', 'Rudranath Sanyal', 244, 'Platinum', 'Sat Jun 26 00:00:00 IST 2021', 'Sun Jul 21 00:00:00 IST 2024', 150000.00, '2.6%'),
-('765256306', '6299037592', 'Malay Sanyal', 173, 'Platinum', 'Fri Jul 09 00:00:00 IST 2021', 'Fri Jul 18 00:00:00 IST 2025', 20000.00, '2.6%');
+('811567699', '7921822085', 'Rajan Sen', 244, 'Platinum', 'Sat Jun 26 00:00:00 IST 2021', 'Sun Jul 21 00:00:00 IST 2024', 150000.00, '2.6%'),
+('765256306', '6299037592', 'Max Sen', 173, 'Platinum', 'Fri Jul 09 00:00:00 IST 2021', 'Fri Jul 18 00:00:00 IST 2025', 20000.00, '2.6%');
 
 -- --------------------------------------------------------
 
@@ -139,8 +139,8 @@ CREATE TABLE `debit` (
 --
 
 INSERT INTO `debit` (`AccountNo`, `CardNO`, `HolderName`, `CVV`, `IssueDate`, `ExpiryDate`) VALUES
-('811567699', '6717506924', 'Rudranath Sanyal', 261, 'Mon Jul 19 00:00:00 IST 2021', 'Tue Aug 05 00:00:00 IST 2025'),
-('765256306', '7019686024', 'Malay Sanyal', 304, 'Fri Jul 16 00:00:00 IST 2021', 'Sat Aug 09 00:00:00 IST 2025');
+('811567699', '6717506924', 'Rajan Sen', 261, 'Mon Jul 19 00:00:00 IST 2021', 'Tue Aug 05 00:00:00 IST 2025'),
+('765256306', '7019686024', 'Max Sen', 304, 'Fri Jul 16 00:00:00 IST 2021', 'Sat Aug 09 00:00:00 IST 2025');
 
 -- --------------------------------------------------------
 
@@ -203,7 +203,7 @@ CREATE TABLE `mrecharge` (
 --
 
 INSERT INTO `mrecharge` (`AccountNo`, `MobileNo`, `Operator`, `Amount`) VALUES
-(811567699, '8240724053', 'Jio', 533.00);
+(811567699, '9740123950', 'Jio', 533.00);
 
 -- --------------------------------------------------------
 
